@@ -25,7 +25,7 @@ Plugins that are published on github can be installed as submodules. For
 example, to install the [JavaScript bundle][jsbun], follow these steps:
 
     cd ~/.vim
-    git submodule add http://github.com/pangloss/vim-javascript.git vim/bundle/vim-javascript
+    git submodule add git@github.com:pangloss/vim-javascript.git bundle/javascript
 
 This will update the `.gitmodules` file by appending something like:
 
