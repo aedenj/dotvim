@@ -9,7 +9,7 @@ running,
     git submodule init
     git submodule update
 
-Make Vim aware of your preferred configuration creating these symlinks:
+Make Vim aware of your preferred configuration by creating these symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
