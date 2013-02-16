@@ -1,4 +1,4 @@
-Installation
+# Installation #
 
     git clone git@github.com:aedenj/dotvim.git ~/.vim
 
@@ -19,7 +19,7 @@ be sure, run:
 
     mkdir ~/tmp
 
-## Adding Plugins under Pathogen ##
+## Adding Plugins Under Pathogen ##
 
 Plugins that are published on github can be installed as submodules. For
 example, to install the [JavaScript bundle][jsbun], follow these steps:
@@ -51,4 +51,5 @@ it work:
     ruby extconf.rb
     make
 
+# THANKS #
 A big shout out to [Drew Neil](https://github.com/nelstrom) whose [Vim cast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) I based this setup on.
