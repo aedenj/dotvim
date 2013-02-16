@@ -2,14 +2,14 @@ Installation
 
     git clone git@github.com:aedenj/dotvim.git ~/.vim
 
-Where possible, Vim plugins are installed as git submodules. Check these out by
-running the commands:
+Vim plugins are installed as git submodules. You can pull them down by
+running,
 
     cd .vim
     git submodule init
     git submodule update
 
-Create symlinks:
+Make Vim aware of your preferred configuration creating these symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
@@ -19,13 +19,7 @@ be sure, run:
 
     mkdir ~/tmp
 
-# VIM #
-
-My preferences for Vim are stored in `~/.vim/vimrc` and `~/.vim/gvimrc`
-respectively. All plugins and scripts are stored in the `~/.vim`
-directory.
-
-## Adding Plugin Bundles ##
+## Adding Plugins under Pathogen ##
 
 Plugins that are published on github can be installed as submodules. For
 example, to install the [JavaScript bundle][jsbun], follow these steps:
@@ -57,4 +51,4 @@ it work:
     ruby extconf.rb
     make
 
-That did the trick.
+A big shout out to [Drew Neil](https://github.com/nelstrom) whose [Vim cast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) I based this setup on.
