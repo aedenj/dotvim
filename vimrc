@@ -50,6 +50,11 @@ au BufWritePre * :%s/\s\+$//e  " remove trailing whitespace on save
 "leader is <space>
 let mapleader=" "
 
+"ctrl-p mappings
+let g:ctrlp_map = '<leader>t'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn\|tmp$'
+
+
 " disable arrow keys
 map <up> <nop>
 map <down> <nop>
