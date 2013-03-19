@@ -40,16 +40,6 @@ as follows:
     git add .
     git ci -m "Added the javascript bundle"
 
-### Command-t
-
-The command-t extension require Vim with ruby support, and furthermore, the
-ruby code depends on a C extension for extra speed. The usual pathogen
-installation proceedure didn't work for me, but I followed these steps to make
-it work:
-
-    cd ~/.vim/bundle/command-t/ruby/command-t
-    ruby extconf.rb
-    make
 
 # THANKS #
 A big shout out to [Drew Neil](https://github.com/nelstrom) whose [Vim cast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) I based this setup on.
