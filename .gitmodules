@@ -47,3 +47,6 @@
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/vim-scripts/UltiSnips
