@@ -29,8 +29,8 @@ example, to install the [JavaScript bundle][jsbun], follow these steps:
 
 This will update the `.gitmodules` file by appending something like:
 
-    [submodule "vim/bundle/vim-javascript"]
-        path = vim/bundle/vim-javascript
+    [submodule "vim/bundle/javascript"]
+        path = vim/bundle/javascript
         url = http://github.com/pangloss/vim-javascript.git
 
 As well as checkout out the git repo into the
@@ -38,7 +38,7 @@ As well as checkout out the git repo into the
 as follows:
 
     git add .
-    git ci -m "Added the javascript bundle"
+    git ci -m "add the javascript bundle"
 
 
 # THANKS #
