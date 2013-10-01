@@ -107,12 +107,11 @@ map <leader>q :ccl<CR>
 " remove highlighted term
 nnoremap <silent> <Leader>* :nohlsearch<CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""
 " nerd commenter
-" """"""""""""""""""""""""""""""""""""""""""""""
-" toggle comments
 map <Leader>/ <plug>NERDCommenterToggle
 
+"nerd tree
+map <C-n> :NERDTreeToggle<CR>
 
 set history=10000
 set backspace+=start,eol,indent
