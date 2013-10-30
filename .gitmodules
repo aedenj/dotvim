@@ -20,9 +20,6 @@
 [submodule "bundle/rvm"]
 	path = bundle/rvm
 	url = git://github.com/tpope/vim-rvm.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
 [submodule "bundle/scala"]
 	path = bundle/scala
 	url = git://github.com/derekwyatt/vim-scala.git
@@ -50,3 +47,12 @@
 [submodule "bundle/slim"]
 	path = bundle/slim
 	url = git@github.com:slim-template/vim-slim.git
+[submodule "bundle/youcompleteme"]
+	path = bundle/youcompleteme
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/haskell"]
+	path = bundle/haskell
+	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
