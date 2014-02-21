@@ -47,9 +47,6 @@
 [submodule "bundle/slim"]
 	path = bundle/slim
 	url = git@github.com:slim-template/vim-slim.git
-[submodule "bundle/youcompleteme"]
-	path = bundle/youcompleteme
-	url = git@github.com:Valloric/YouCompleteMe.git
 [submodule "bundle/haskell"]
 	path = bundle/haskell
 	url = https://github.com/eagletmt/ghcmod-vim.git
