@@ -17,7 +17,7 @@ set visualbell
 
 set list  " show invisible characters
 set listchars="  " reset the listchars
-set listchars=tab:\ \  " a tab should display as "  "
+"set listchars=tab:\ \  " a tab should display as "  "
 set listchars+=trail:·  " show trailing spaces as dots
 set listchars+=extends:>  " The character to show in the last column when wrap is off and the line continues beyond the right of the screen
 set listchars+=precedes:<  " The character to show in the last column when wrap is off and the line continues beyond the right of the screen
