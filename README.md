@@ -1,6 +1,6 @@
 # Installation #
 
-    git clone git@github.com:aedenj/dotvim.git ~/.vim
+    git clone https://github.com/aedenj/dotvim.git ~/.vim
 
 Vim plugins are installed as git submodules. You can pull them down by
 running,
