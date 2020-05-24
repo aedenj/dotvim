@@ -123,6 +123,9 @@ map <Leader>/ <plug>NERDCommenterToggle
 " nerd tree
 map <C-n> :NERDTreeToggle<CR>
 
+" cmd-t
+let g:CommandTWildIgnore=&wildignore . ",/node_modules"
+
 " floating menu colors
 hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
