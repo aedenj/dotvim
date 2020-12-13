@@ -123,8 +123,8 @@ map <Leader>/ <plug>NERDCommenterToggle
 " nerd tree
 map <C-n> :NERDTreeToggle<CR>
 
-" cmd-t
-let g:CommandTWildIgnore=&wildignore . ",/node_modules"
+" vim-test
+let test#strategy = "vimterminal"
 
 " floating menu colors
 hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
@@ -201,8 +201,8 @@ endfunction
 "" Highlight the symbol and its references when holding the cursor.
 "autocmd CursorHold * silent call CocActionAsync('highlight')
 
-""" Symbol renaming.
-"nmap <leader>rn <Plug>(coc-rename)
+"" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
 
 """ Formatting selected code.
 "xmap <leader>f  <Plug>(coc-format-selected)

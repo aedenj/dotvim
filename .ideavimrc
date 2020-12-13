@@ -1,0 +1,129 @@
+"leader is <space>
+let mapleader=" "
+
+" Show a few lines of context around the cursor.  Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+set incsearch " Do incremental searching
+set hlsearch " Highlight search results
+set history=1000
+set visualbell
+set ignorecase " Ignore case when searching
+set smartcase " If there is an uppercase in your search term KEYMAP
+
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+
+""" Plugins  --------------------------------
+set surround
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+
+" disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" move around windows easier
+map <leader>h <C-w>h
+map <leader>j <C-w>j
+map <leader>k <C-w>k
+map <leader>l <C-w>l
+
+" easy splitting
+map <leader>s :split<cr>
+map <leader>v :vsplit<cr>
+
+" Shell
+"nnoremap <c-w>j :action Activatesbt-shell-toolwindowToolWindow<CR>
+
+" Menus
+nnoremap <leader>m :action ActivateProjectToolWindow<CR>
+
+" You're one with the Force when never distracted
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+" Pasting from yank history
+nnoremap <leader>y :action PasteMultiple<CR>
+
+" Comment
+nnoremap <leader>cc :action CommentByLineComment<CR>
+vmap <leader>cc :action CommentByLineComment<CR>
+vmap <leader>cb :action CommentByBlockComment<CR>
+
+" Refactorings
+nnoremap <leader>oi :action OptimizeImports<CR>
+nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>rf :action RenameFile<CR>
+nnoremap <leader>ri :action Inline<CR>
+nnoremap <leader>rv :action IntroduceVariable<CR>
+nnoremap <leader>rm :action ExtractMethod<CR>
+nnoremap <leader>rr :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>rp :action IntroduceParameter<CR>
+nnoremap <leader>im :action ImplementMethods<CR>
+nnoremap <leader>om :action OverrideMethods<CR>
+nnoremap <leader>F :action ReformatCode<CR>
+
+" GoTo
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gr :action FindUsages<CR>
+nnoremap <leader>gi :action GotoImplementation<CR>
+nnoremap <leader>gs :action ActivateStructureToolWindow<CR>
+nnoremap <leader>sp :action ParameterInfo<CR>
+nnoremap <leader>si :action Scala.ShowImplicitArguments<CR>
+nnoremap <leader>sd :action QuickImplementations<CR>
+
+" Types
+nnoremap K :action Scala.TypeInfo<CR>
+vmap K :action Scala.TypeInfo<CR>
+
+" Quickfix action, which opens the suggestion window
+nnoremap <leader>qf :action ShowIntentionActions<CR>
+
+" Search
+nnoremap <leader>fs :action GotoSymbol<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fc :action GotoClass<CR>
+nnoremap <leader>fa :action GotoAction<CR>
+nnoremap <leader>fg :action FindInPath<CR>
+nnoremap <leader>fr :action ReplaceInPath<CR>
+
+" Test and Run
+nnoremap <leader>gt :action GotoTest<CR>
+nnoremap <leader>tn :action RunClass<CR>
+nnoremap <leader>tl :action Rerun<CR>
+nnoremap <leader>tf :action RerunFailedTests<CR>
+
+" Jumping
+" built-in navigation to navigated items works better
+nnoremap <c-o> :action Back<cr>
+nnoremap <c-i> :action Forward<cr>
+
+" Navigation
+nnoremap ]c :action GotoNextError<cr>
+nnoremap [c :action GotoPreviousError<cr>
+nnoremap ]h :action VcsShowNextChangeMarker<cr>
+nnoremap [h :action VcsShowPrevChangeMarker<cr>
+
+" Debugging
+map <leader>d <Action>(Debug)
+map <leader>c <Action>(Stop)
+map <leader>b <Action>(ToggleLineBreakpoint)
+
+"map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>g <Action>(Vcs.ShowTabbedFileHistory)
+
+map <leader>o <Action>(FileStructurePopup)
