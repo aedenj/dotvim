@@ -41,5 +41,12 @@ as follows:
     git ci -m "add the javascript bundle"
 
 
+## IntelliJ IDEA
+
+Occassionally I'll do Java development and [IdeaVim](https://github.com/JetBrains/ideavim) has gotten to a point that it's just less painful, I've found,
+to do such development in an IDE. When that's called for I'll symlink the IdeaVim setup:
+
+    ln -s ~/.vim/ideavimrc ~/.ideavimrc
+
 # THANKS #
 A big shout out to [Drew Neil](https://github.com/nelstrom) whose [Vim cast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) I based this setup on.
