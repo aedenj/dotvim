@@ -51,6 +51,7 @@ map <leader>v :vsplit<cr>
 
 " Menus
 nnoremap <leader>m :action ActivateProjectToolWindow<CR>
+nnoremap <leader>mt :action ActivateTerminalToolWindow<CR>
 
 " You're one with the Force when never distracted
 map <leader>z <Action>(ToggleDistractionFreeMode)
