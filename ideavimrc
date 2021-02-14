@@ -19,6 +19,7 @@ map Q gq
 
 """ Plugins  --------------------------------
 set surround
+set commentary
 
 """ Idea specific settings ------------------
 set ideajoin
