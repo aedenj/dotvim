@@ -20,6 +20,7 @@ map Q gq
 """ Plugins  --------------------------------
 set surround
 set commentary
+set NERDTree
 
 """ Idea specific settings ------------------
 set ideajoin
@@ -53,6 +54,9 @@ map <leader>v :vsplit<cr>
 " Menus
 nnoremap <leader>m :action ActivateProjectToolWindow<CR>
 nnoremap <leader>mt :action ActivateTerminalToolWindow<CR>
+
+" nerd tree
+map <C-n> :NERDTreeToggle<CR>
 
 " You're one with the Force when never distracted
 map <leader>z <Action>(ToggleDistractionFreeMode)
