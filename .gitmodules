@@ -23,9 +23,6 @@
 [submodule "bundle/scala"]
 	path = bundle/scala
 	url = git://github.com/derekwyatt/vim-scala.git
-[submodule "bundle/haml"]
-	path = bundle/haml
-	url = git://github.com/tpope/vim-haml.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -38,15 +35,6 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = git@github.com:mileszs/ack.vim.git
-[submodule "bundle/coffeescript"]
-	path = bundle/coffeescript
-	url = git@github.com:kchmck/vim-coffee-script.git
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = https://github.com/vim-scripts/UltiSnips
-[submodule "bundle/slim"]
-	path = bundle/slim
-	url = git@github.com:slim-template/vim-slim.git
 [submodule "bundle/haskell"]
 	path = bundle/haskell
 	url = https://github.com/eagletmt/ghcmod-vim.git
@@ -56,12 +44,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/puppet"]
-	path = bundle/puppet
-	url = git@github.com:rodjek/vim-puppet.git
-[submodule "bundle/jade"]
-	path = bundle/jade
-	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/coc.nvim"]
 	path = bundle/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
