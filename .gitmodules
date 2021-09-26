@@ -50,3 +50,6 @@
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = git@github.com:vim-test/vim-test.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
