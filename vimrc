@@ -1,4 +1,6 @@
+" for more of vim-plug see https://github.com/junegunn/vim-plug
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
 Plug 'tpope/vim-sensible'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
