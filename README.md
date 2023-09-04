@@ -17,9 +17,9 @@ firing up `vim` then running the following in `vim`,
 
     :PlugInstall
 
-Since I'm using the coc.nvim plugin and want LSP support run
+Since I'm using the coc.nvim here's a list of typical plugins,
 
-    :CocInstall coc-json coc-tsserver
+    :CocInstall coc-json coc-tsserver coc-html coc-git coc-sql coc-docker coc-css
 
 Now that's all done for good measure go ahead a restart vim.
 
