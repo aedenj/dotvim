@@ -2,24 +2,23 @@
 
     git clone https://github.com/aedenj/dotvim.git ~/.vim
 
-Vim plugins are installed as git submodules. You can pull them down by
-running,
-
-    cd ~/.vim
-    git submodule init
-    git submodule update
-
 Make Vim aware of your preferred configuration by creating these symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
+
+Vim plugins are installed via [vim-plug](https://github.com/junegunn/vim-plug). You can pull them down by
+running,
+
+
+
 
 I put Vim's backup and swap files in `~/tmp`, so that directory must exist. To
 be sure, run:
 
     mkdir ~/tmp
 
-## Adding Plugins Under Pathogen ##
+## Adding Plugins Under Vim-Plug
 
 Plugins that are published on github can be installed as submodules. For
 example, to install the [JavaScript bundle][jsbun], follow these steps:

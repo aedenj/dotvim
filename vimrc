@@ -1,30 +1,25 @@
 " call pathogen#infect()
 " call pathogen#helptags()
 
-set nocompatible
-filetype off
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+Plug 'preservim/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
 
-syntax on
-filetype plugin indent on
+
 
 set expandtab softtabstop=2 tabstop=2 shiftwidth=2
 set t_Co=256 " 256 colors
 set number  " show line numbers
-set ruler  " show line and column numbers
 set encoding=utf-8  " set default encoding to UTF-8 filetype plugin indent on
-
 set visualbell
 
 set list  " show invisible characters
-set listchars="  " reset the listchars
-"set listchars=tab:\ \  " a tab should display as "  "
-set listchars+=trail:·  " show trailing spaces as dots
-set listchars+=extends:>  " The character to show in the last column when wrap is off and the line continues beyond the right of the screen
-set listchars+=precedes:<  " The character to show in the last column when wrap is off and the line continues beyond the right of the screen
 
 " searching
 set hlsearch  " highlight matches
-set incsearch  " incremental searching
 set ignorecase  " searches are case insensitive
 set smartcase  " unless they contain at least one capital letter
 
@@ -51,9 +46,6 @@ set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz  " disable archive files
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/* " ignore bundler and sass cache
 set wildignore+=*/public/system/*  " ignore assets
 set wildignore+=*.swp,*~,._*  " disable temp and backup files
-
-" status line
-set laststatus=2  " always show the status bar
 
 " autocommands
 au BufNewFile,BufRead *.json set ft=javascript  " treat JSON files like JavaScript
