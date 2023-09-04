@@ -7,16 +7,22 @@ Make Vim aware of your preferred configuration by creating these symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
+I put Vim's backup and swap files in `~/tmp`, so that directory must exist. To
+be sure, run:
+
+    mkdir ~/tmp
+
 Vim plugins are installed via [vim-plug](https://github.com/junegunn/vim-plug). You can pull them down by
 firing up `vim` then running the following in `vim`,
 
     :PlugInstall
 
+Since I'm using the coc.nvim plugin and want LSP support run
 
-I put Vim's backup and swap files in `~/tmp`, so that directory must exist. To
-be sure, run:
+    :CocInstall coc-json coc-tsserver
 
-    mkdir ~/tmp
+Now that's all done for good measure go ahead a restart vim.
+
 
 ## Adding Plugins Under Vim-Plug
 
