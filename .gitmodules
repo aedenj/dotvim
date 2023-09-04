@@ -7,10 +7,6 @@
 [submodule "bundle/delimitmate"]
 	path = bundle/delimitmate
 	url = git://github.com/Raimondi/delimitMate.git
-[submodule "bundle/clojure"]
-	path = bundle/clojure
-	url = git://github.com/vim-scripts/VimClojure.git
-  ignore = dirty
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = git://github.com/tpope/vim-rails.git

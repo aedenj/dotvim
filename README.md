@@ -5,7 +5,7 @@
 Vim plugins are installed as git submodules. You can pull them down by
 running,
 
-    cd .vim
+    cd ~/.vim
     git submodule init
     git submodule update
 
