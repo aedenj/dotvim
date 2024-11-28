@@ -1,6 +1,6 @@
 # Installation #
 
-    git clone https://github.com/aedenj/dotvim.git ~/.vim
+    git clone git@github.com:aedenj/dotvim.git ~/.vim
 
 Make Vim aware of your preferred configuration by creating these symlinks:
 
